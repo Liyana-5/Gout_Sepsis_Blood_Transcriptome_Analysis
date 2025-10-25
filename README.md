@@ -9,4 +9,6 @@ Although both gout and sepsis involve systemic inflammation, the underlying tran
 We hypothesize that distinct gene expression signatures in blood can effectively differentiate gout from sepsis, reflecting disease-specific immune activation patterns.
 
 ## Files
+- Analysis.R contains the main R script used for analysis.
+- Annotations.csv contains the annotation file for the genes
 - 
