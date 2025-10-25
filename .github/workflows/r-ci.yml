@@ -19,7 +19,7 @@ jobs:
 
     - name: Install R packages
       run: |
-        install.packages(c("tidyverse","ggplot2","pheatmap"))
+        Rscript -e 'install.packages(c("tidyverse","ggplot2","pheatmap"), repos="https://cloud.r-project.org/")'
 
     - name: Run analysis
       run: Rscript Analysis.R
