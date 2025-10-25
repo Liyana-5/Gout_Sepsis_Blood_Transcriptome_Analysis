@@ -3,11 +3,11 @@
 #Ha:The blood can be used to differentiate between GOUT and SEPSIS based on gene expression profile 
 
 #import the datasets into R
-expr_value=read.table("C:/Users/liyan/Desktop/Glasgow/ststistics for bioinformatics 2425/data for assesment report/Expression_Table.csv",header=TRUE,row.names=1,sep="\t")
-sample_info=read.table("C:/Users/liyan/Desktop/Glasgow/ststistics for bioinformatics 2425/data for assesment report/Sample_Information.csv",header=TRUE,row.names=1,sep="\t")
-annotation=read.table("C:/Users/liyan/Desktop/Glasgow/ststistics for bioinformatics 2425/data for assesment report/Annotations.csv",header=TRUE,row.names=1,sep="\t")
-DE_gout_vs_healthy=read.table("C:/Users/liyan/Desktop/Glasgow/ststistics for bioinformatics 2425/data for assesment report/DE_GOUT_vs_HC.csv",header=TRUE,row.names=1,sep="\t")
-De_sa_vs_healthy=read.table("C:/Users/liyan/Desktop/Glasgow/ststistics for bioinformatics 2425/data for assesment report/DE_SA_vs_HC.csv",header=TRUE,row.names=1,sep="\t")
+expr_value=read.table("Expression_Table.csv",header=TRUE,row.names=1,sep="\t")
+sample_info=read.table("Sample_Information.csv",header=TRUE,row.names=1,sep="\t")
+annotation=read.table("Annotations.csv",header=TRUE,row.names=1,sep="\t")
+DE_gout_vs_healthy=read.table("DE_GOUT_vs_HC.csv",header=TRUE,row.names=1,sep="\t")
+De_sa_vs_healthy=read.table("DE_SA_vs_HC.csv",header=TRUE,row.names=1,sep="\t")
 
 #annotating differential and expression tables 
 expression_annotated=merge(annotation,expr_value,by.x=0,by.y=0)
